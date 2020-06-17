@@ -1,0 +1,317 @@
+html{
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
+
+body{
+    margin:1px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12pt;
+}
+
+.container{
+    background-color: #ffffff;
+    border: 0px solid #a6cbeb;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+header{
+    
+    height: 70px;
+    padding: 10px;
+    display: inline-block;
+    margin: 1em;
+    
+    
+}
+.logo{
+    max-width: 100%;
+}
+
+header a:link{
+    text-decoration: none;
+    color:black;
+    
+}
+
+header a:visited {
+    text-decoration: none;
+    color:black;
+  }
+
+
+section{
+    width:100%;
+    position: relative;
+}
+
+.textBox{
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    padding: 10px;
+    width: 150px;
+    background-color:rgba(186,186,186,0);
+    
+
+}
+
+.mainImg {
+    display:block;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+    
+}
+
+
+
+
+
+
+
+nav { background-color: #3a3a3a;
+    
+}
+nav ul{
+    padding-left: 1px;
+}
+
+nav li {
+    display: inline-flex;
+    
+    color: #ffffff;
+    font-size: 5pt;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul li a:link{
+    text-decoration: none;
+    color:White;
+}
+
+nav ul li a:visited {
+    text-decoration: none;
+    color:White;
+  }
+
+  nav ul li:hover {
+    background-color: #4c96d7;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #4c96d7;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+footer {
+    border-top: 5px solid #3a3a3a;
+    text-align: center;
+}
+.ownLarge{
+    
+    opacity: 0;
+}
+.own{opacity: 1;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
+}
+
+div.upgradeWrap{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin-left: 5%;
+}
+div.text{
+    width:100%;
+    height: 125px;;
+    text-align: center;
+    vertical-align: bottom;
+    line-height: 25px;
+    font-size: small;
+}
+
+div.upgradeAdjust{
+    width:40%;
+    height: 65px;
+    margin: 10px 10px 30px 10px;
+    background-color: #4c96d7;
+    border: black solid 1px;
+    
+
+}
+
+img.upgradeImg{
+    display:block;
+    margin:auto;
+    width: 65px;
+    height: 65px;
+}
+
+input[type=text],select, textarea,input[type=email],input[type=password],input[type=submit],input[type=number] {
+    
+  margin: 8px 0px 25px 0;
+  display: block;
+}
+
+.span{
+  margin: 8px 0px 25px 0;
+  display: block;
+  max-width: 450px;
+}
+
+#inv-display{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   #inv-display li{
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+   }
+   
+   #inv-display li img {
+       max-width: 100%;
+   }
+
+   #disImage{
+    max-width: 100%;
+   }
+
+
+    
+
+@media only screen and (min-width: 750px){
+.container{
+    background-color: #ffffff;
+    border: 4px solid #a6cbeb;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body{
+    background-image: url("../images/site/checkerboard.jpg");
+    background-repeat: repeat;
+}
+nav li{
+    font-size: 16pt;
+}
+
+header{
+    
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+
+    
+    
+}
+
+.ownLarge{opacity: 1;
+    min-width: 100px;
+    max-width: 125px;
+    margin-top: 15px}
+.own{opacity: 0;
+    
+}
+
+.textBox{
+    background-color:rgba(186,186,186,.2);
+    left: 10px;
+    padding: 20px;
+}
+div.upgradeWrap{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+}
+article{
+    
+    flex-direction: row-reverse;
+    display:flex;
+    width: 100%;
+}
+div.reviews{
+    width: 50%;
+}
+div.upgrades{
+    width:50%
+}
+
+div.upgradeWrap{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin-left: 5%;
+}
+
+div.upgradeAdjust{
+    width:35%;
+    
+    
+
+}
+
+/* For vehicle display in classification view */
+#inv-display {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#inv-display h2{
+    font-size: 1rem;
+}
+
+#inv-display li {
+    max-width: 200px;
+    flex: 1 0 auto;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+#inv-display div {
+    width: 100%;
+}
+
+div.inline-element {
+    display: inline-block;
+    width: 48%;
+    padding: 1%;
+    
+}
+
+}
+@media only screen and (min-width: 400px) and (max-width: 750px){
+    nav li{
+        font-size: 8pt;
+    }
+
+   
+
+}
